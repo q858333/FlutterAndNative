@@ -1,5 +1,5 @@
 # FlutterAndNative
-## Flutter 和 iOS交互(不实用cocoapod)，查考 https://flutter.cn/docs/add-to-app/ios/project-setup
+## Flutter 和 iOS交互(不使用cocoapod)，查考 https://flutter.cn/docs/add-to-app/ios/project-setup
 1.使用命令行创建Flutter module，
 flutter create --template module my_flutter
 
