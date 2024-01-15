@@ -15,16 +15,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.groupEngine = [[FlutterEngineGroup alloc] initWithName:@"my_flutter" project:nil];
+    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    
     self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my_flutter"];
      // Runs the default Dart entrypoint with a default Flutter route.
      [self.flutterEngine run];
-//    [self.flutterEngine runWithEntrypoint:@"main" libraryURI:@"Test.dart"];
-
      // Connects plugins with iOS platform code to this app.
      [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
      return [super application:application didFinishLaunchingWithOptions:launchOptions];
     // Override point for customization after application launch.
-    return YES;
 }
 
 

@@ -11,6 +11,8 @@
 @interface AppDelegate : FlutterAppDelegate <UIApplicationDelegate>
 
 @property (nonatomic,strong) FlutterEngine *flutterEngine;
+@property (nonatomic,strong) FlutterEngineGroup *groupEngine;
+
 
 @end
 

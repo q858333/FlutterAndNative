@@ -22,6 +22,8 @@
 		B4CB42C82B51210D00EB8E81 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB42C52B51210D00EB8E81 /* App.xcframework */; };
 		B4CB42C92B51210D00EB8E81 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4CB42C52B51210D00EB8E81 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4CB42CD2B51235400EB8E81 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB42CC2B51235400EB8E81 /* GeneratedPluginRegistrant.m */; };
+		B4CB42D02B550B9400EB8E81 /* SingleFlutterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB42CF2B550B9300EB8E81 /* SingleFlutterVC.m */; };
+		B4CB42D32B55118400EB8E81 /* AddFlutterViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CB42D22B55118400EB8E81 /* AddFlutterViewVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		B4CB42C52B51210D00EB8E81 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = Flutter/FlutterFramework/App.xcframework; sourceTree = "<group>"; };
 		B4CB42CB2B51235400EB8E81 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		B4CB42CC2B51235400EB8E81 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		B4CB42CE2B550B9300EB8E81 /* SingleFlutterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleFlutterVC.h; sourceTree = "<group>"; };
+		B4CB42CF2B550B9300EB8E81 /* SingleFlutterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleFlutterVC.m; sourceTree = "<group>"; };
+		B4CB42D12B55118400EB8E81 /* AddFlutterViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFlutterViewVC.h; sourceTree = "<group>"; };
+		B4CB42D22B55118400EB8E81 /* AddFlutterViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFlutterViewVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,10 @@
 				B4CB42822B511A2300EB8E81 /* ViewController.m */,
 				B4CB42CB2B51235400EB8E81 /* GeneratedPluginRegistrant.h */,
 				B4CB42CC2B51235400EB8E81 /* GeneratedPluginRegistrant.m */,
+				B4CB42CE2B550B9300EB8E81 /* SingleFlutterVC.h */,
+				B4CB42CF2B550B9300EB8E81 /* SingleFlutterVC.m */,
+				B4CB42D12B55118400EB8E81 /* AddFlutterViewVC.h */,
+				B4CB42D22B55118400EB8E81 /* AddFlutterViewVC.m */,
 				B4CB42842B511A2300EB8E81 /* Main.storyboard */,
 				B4CB42872B511A2500EB8E81 /* Assets.xcassets */,
 				B4CB42892B511A2500EB8E81 /* LaunchScreen.storyboard */,
@@ -306,6 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CB42832B511A2300EB8E81 /* ViewController.m in Sources */,
+				B4CB42D02B550B9400EB8E81 /* SingleFlutterVC.m in Sources */,
+				B4CB42D32B55118400EB8E81 /* AddFlutterViewVC.m in Sources */,
 				B4CB427D2B511A2300EB8E81 /* AppDelegate.m in Sources */,
 				B4CB428E2B511A2500EB8E81 /* main.m in Sources */,
 				B4CB42802B511A2300EB8E81 /* SceneDelegate.m in Sources */,
@@ -498,7 +510,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deng;
+				PRODUCT_BUNDLE_IDENTIFIER = com.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deng;
+				PRODUCT_BUNDLE_IDENTIFIER = com.;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

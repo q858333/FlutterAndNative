@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
+import 'DoubleMainWidget.dart';
+import 'SingleMainWidget.dart';
+
+@pragma('vm:entry-point')
+void singleMain() {
+  runApp(const SingleMain());
+  _configLoading();
+}
+
+@pragma('vm:entry-point')
+void doubleMain() {
+  runApp(const DoubleMainWidget());
+}
+
 void main() {
   runApp(const MyApp());
   _configLoading();
@@ -39,7 +53,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
-        builder: EasyLoading.init(),
+      builder: EasyLoading.init(),
     );
   }
 }
