@@ -1,6 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+  _configLoading();
+}
+
+void _configLoading() {
+  EasyLoading.instance
+    ..maskType = EasyLoadingMaskType.clear
+    ..loadingStyle = EasyLoadingStyle.dark
+    ..backgroundColor = Colors.black45
+    ..indicatorColor = Colors.black
+    ..textColor = Colors.white
+    ..indicatorSize = 72.0
+    ..radius = 10.0
+    ..displayDuration = const Duration(milliseconds: 2000)
+    ..userInteractions = false;
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -22,6 +39,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        builder: EasyLoading.init(),
     );
   }
 }
@@ -48,6 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    EasyLoading.showToast("+++++");
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
